@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB2BB30517EF61680002209D /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2BB30417EF61680002209D /* DBManager.m */; };
+		AB2BB30817EF67BB0002209D /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2BB30717EF67BB0002209D /* SignUpViewController.m */; };
+		AB2BB30A17EF698F0002209D /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2BB30917EF698F0002209D /* libsqlite3.0.dylib */; };
 		ABB8A36217E90E7F00C688B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB8A36117E90E7F00C688B7 /* UIKit.framework */; };
 		ABB8A36417E90E7F00C688B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB8A36317E90E7F00C688B7 /* Foundation.framework */; };
 		ABB8A36617E90E7F00C688B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB8A36517E90E7F00C688B7 /* CoreGraphics.framework */; };
@@ -22,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB2BB30317EF61680002209D /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		AB2BB30417EF61680002209D /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		AB2BB30617EF67BB0002209D /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		AB2BB30717EF67BB0002209D /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		AB2BB30917EF698F0002209D /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		ABB8A35E17E90E7F00C688B7 /* Warmup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Warmup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB8A36117E90E7F00C688B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ABB8A36317E90E7F00C688B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -46,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB2BB30A17EF698F0002209D /* libsqlite3.0.dylib in Frameworks */,
 				ABB8A36217E90E7F00C688B7 /* UIKit.framework in Frameworks */,
 				ABB8A36417E90E7F00C688B7 /* Foundation.framework in Frameworks */,
 				ABB8A36617E90E7F00C688B7 /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +67,7 @@
 		ABB8A35517E90E7F00C688B7 = {
 			isa = PBXGroup;
 			children = (
+				AB2BB30917EF698F0002209D /* libsqlite3.0.dylib */,
 				ABB8A36717E90E7F00C688B7 /* Warmup */,
 				ABB8A36017E90E7F00C688B7 /* Frameworks */,
 				ABB8A35F17E90E7F00C688B7 /* Products */,
@@ -92,6 +102,10 @@
 				ABB8A37F17E90E8000C688B7 /* ViewController.h */,
 				ABB8A38017E90E8000C688B7 /* ViewController.m */,
 				ABB8A36817E90E8000C688B7 /* Supporting Files */,
+				AB2BB30317EF61680002209D /* DBManager.h */,
+				AB2BB30417EF61680002209D /* DBManager.m */,
+				AB2BB30617EF67BB0002209D /* SignUpViewController.h */,
+				AB2BB30717EF67BB0002209D /* SignUpViewController.m */,
 			);
 			path = Warmup;
 			sourceTree = "<group>";
@@ -180,6 +194,8 @@
 				ABB8A36E17E90E8000C688B7 /* main.m in Sources */,
 				ABB8A37217E90E8000C688B7 /* AppDelegate.m in Sources */,
 				ABB8A38117E90E8000C688B7 /* ViewController.m in Sources */,
+				AB2BB30517EF61680002209D /* DBManager.m in Sources */,
+				AB2BB30817EF67BB0002209D /* SignUpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +240,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Matthew Parides (L2DR7LJ285)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -239,6 +256,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -255,6 +273,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Matthew Parides (L2DR7LJ285)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -263,6 +282,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -272,10 +292,14 @@
 		ABB8A38517E90E8000C688B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Matthew Parides (L2DR7LJ285)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Warmup/Warmup-Prefix.pch";
 				INFOPLIST_FILE = "Warmup/Warmup-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -283,10 +307,12 @@
 		ABB8A38617E90E8000C688B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Matthew Parides (L2DR7LJ285)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Warmup/Warmup-Prefix.pch";
 				INFOPLIST_FILE = "Warmup/Warmup-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -310,6 +336,7 @@
 				ABB8A38617E90E8000C688B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

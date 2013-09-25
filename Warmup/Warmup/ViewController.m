@@ -17,6 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _localDB = [DBManager getSharedInstance];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -27,8 +28,15 @@
 }
 
 -(IBAction)selectAndMove:(id)sender {
-    if ([self.idField.text isEqualToString:@"mmp37"] && [self.passField.text isEqualToString:@"fakepassword"]) {
-        [self performSegueWithIdentifier:@"CompleteSeg" sender:self];
+    
+    if([((UIButton*)sender).titleLabel.text isEqualToString:@"Sign Up"]){
+        [self performSegueWithIdentifier:@"SignUpSeg" sender:self];
+    }
+    else {
+        NSArray * userPassArr = [self.localDB findByUserName:self.idField.text];
+        if ([userPassArr containsObject:self.passField.text]) {
+            [self performSegueWithIdentifier:@"CompleteSeg" sender:self];
+        }
     }
 }
 
